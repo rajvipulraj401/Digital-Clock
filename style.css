@@ -1,0 +1,85 @@
+body {
+   /*we will first remove the default margin of browser from all side  .*/
+   margin: 0;
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /*this center the elements in center horizontally */
+
+   height: 100vh;
+   justify-content: center;
+   /*in order to center them vertically also .
+
+  step 1) first we need to set the height of the body to the height of the screen. (viewport
+  step 2) then we will justify-content to the center to make it vertically in the center .*/
+
+   background: url("https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-2K-Picture.jpg");
+   background-size: cover;
+   overflow: hidden;
+ }
+ 
+ h2 {
+   text-transform: uppercase;
+   /*to capitalize all letter */
+   letter-spacing: 4px; 
+    /*this give space between letters*/
+   font-size: 14px;
+   text-align: center;
+   color: white;
+ }
+ 
+ .clock {
+   display: flex;
+    /*flex is 1d and it will make everything horizontal and make it
+   next to each other row jaisa kr dega . */
+
+ }
+ 
+
+ /*now we wiil target all the divs that is inside the clock claasss so */
+ 
+
+ .clock div {
+   margin: 5px;
+   /* is margin se ye hoga ki hour wala div aur min wala aur sec sabme thora gap
+    de denge */
+   position: relative;
+ }
+ 
+ .clock span {
+   width: 100px;
+   height: 80px;
+   /*we give some height and width to hours and minutes and its time*/
+   background: slateblue;
+   opacity: 0.8;
+   color: white;
+   display: flex;
+ /*isse sab chiz center me aa jayega jaise pehle 00 aur hours bagal me tha left
+   right pr iske baad upar neeche ho jayega '
+    (kYUNKI YE horizontally CENTER kr deta hai )*/
+
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   /*alpha value to 30 percent and the colorr black*/
+ }
+ 
+ .clock .text {
+   height: 30px;
+   font-size: 10px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   background: darkblue;
+   opacity: 80%; /*80 percent likho ya 0.8 dono same baat hai*/
+ }
+ 
+ .clock #ampm {
+   bottom: 0;
+   position: absolute;
+   width: 60px;
+   height: 30px;
+   font-size: 20px;
+   background: green;
+ }
